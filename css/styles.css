@@ -34,7 +34,7 @@ header img {
 
 h2 {
 	font-family: 'Montserrat', sans-serif;
-	padding: 1%
+	padding: 1%;
 	text-align: center;
 }
 
@@ -81,8 +81,8 @@ article:nth-of-type(4) {
 main {
 	background-color: #233548;
 	color: #fff;
-	padding: 1%;
-	font-size: 1.15em;
+	padding: 2% 10%;
+	font-size: 1.5em;
 	font-family: 'Merriweather', serif;
 }
 
@@ -166,7 +166,6 @@ footer p a {
 	}
 
 	 main {
-		 background=color: #235385;
 		 clear: left;
 	}
 	 
@@ -213,8 +212,8 @@ footer p a {
 }
 
 .hours {
-	text-align: center-left;
-	padding: 1% 1% 1% 20%;
+	text-align: left;
+	padding: 1% 1% 1% 30%;
 }
 .grid {
 	display: grid;
@@ -239,6 +238,9 @@ footer p a {
 }
 .menu {
 	padding: 0% 20%;
+}
+.link {
+	text-decoration: none;
 }
 
 														/*ids*/
