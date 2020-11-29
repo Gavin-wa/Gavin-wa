@@ -34,7 +34,7 @@ header img {
 
 h2 {
 	font-family: 'Montserrat', sans-serif;
-	padding: 1%
+	padding: 1%;
 	text-align: center;
 }
 
@@ -62,7 +62,7 @@ nav li a {
 	display: block;
 	color: #235385;
 	padding: 0.5em 1em;
-	text-decoration: none;
+	text-decoration:none;
 }
 article {
 	background-color: rgba(255, 255, 255, 100);
@@ -166,7 +166,6 @@ footer p a {
 	}
 
 	 main {
-		 background=color: #235385;
 		 clear: left;
 	}
 	 
@@ -213,7 +212,7 @@ footer p a {
 }
 
 .hours {
-	text-align: center-left;
+	text-align: left;
 	padding: 1% 1% 1% 20%;
 }
 .grid {
@@ -240,9 +239,20 @@ footer p a {
 .menu {
 	padding: 0% 20%;
 }
+.link {
+	text-decoration: none;
+}
+
 
 														/*ids*/
 														
+#name {
+		color: #e41e26;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2em;
+		font-weight: bold;
+		padding: 0em .5em;
+}
 #center {
 	text-align: center;
 }
@@ -260,13 +270,7 @@ footer p a {
 #pad2-0 {
 	padding: 10% 0%;
 }
-#name {
-		color: #e41e26;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 1.2em;
-		font-weight: bold;
-		padding: 0% 1%;
-}
+
 #namebig {
 		color: #e41e26;
 		font-family: 'Montserrat', sans-serif;
