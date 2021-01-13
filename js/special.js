@@ -1,6 +1,6 @@
 (function() {
 	//special function
-	var	 menu = {
+	var	menu = {
 		name: 'Ham and Cheese Sub',
 		oCost: 5.99, // starting price $5.99
 		discount: 25, // % discount
@@ -13,11 +13,11 @@
 	// Write out for menu item, starting price, and discount price
 	var menuName, oCost, dCost;
 	
-	menuName = document.getElementById('MenuName');
+	menuName = document.getElementById('menuName');
 	oCost = document.getElementById('oCost');
 	dCost = document.getElementById('dCost');
 	
-	menuName.textContent = menu.name; //item name
+	menuName.textContent = menu.name;
 	oCost.textContent = '$' + menu.oCost.toFixed(2); //old offer
 	dCost.textContent = '$' + menu.offerPrice(); //new offer
 	
