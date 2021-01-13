@@ -1,6 +1,6 @@
 (function() {
 	//special function
-	var	 hamsub = {
+	var	 menu = {
 		name: 'Ham and Cheese Sub',
 		oCost: 5.99, // starting price $5.99
 		discount: 25, // % discount
@@ -17,9 +17,9 @@
 	oCost = document.getElementById('oCost');
 	dCost = document.getElementById('dCost');
 	
-	menuName.textContent = hamsub.name; //item name
-	oCost.textContent = '$' + hamsub.oCost.toFixed(2); //old offer
-	dCost.textContent = '$' + hamsub.offerPrice(); //new offer
+	menuName.textContent = menu.name; //item name
+	oCost.textContent = '$' + menu.oCost.toFixed(2); //old offer
+	dCost.textContent = '$' + menu.offerPrice(); //new offer
 	
 	//expiry details
 	
