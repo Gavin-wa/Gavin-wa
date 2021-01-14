@@ -19,7 +19,7 @@
 	
 	menuName.textContent = menu.name;
 	oCost.textContent = '$' + menu.oCost.toFixed(2); //old offer
-	dCost.textContent = '$' + menu.offerPrice(); //new offer
+	dCost.textContent = '$' + menu.offerPrice(2); //new offer
 	
 	//expiry details
 	

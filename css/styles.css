@@ -301,56 +301,5 @@ footer p a {
 	border-color: #fff;
 	font-weight: bold;
 }
-
-/* javascript book imported CSS */
-
-#info {
-  background-color: #1e1b1e;
-  color: #fff;
-  width: 200px;
-  padding: 0 15px;
-  text-align: center;
-  min-height: 100%;
-  position: absolute;
-  top: 0;
-  right: 15%;
-}
-
-#hamsub {
-  text-transform: uppercase;
-  text-align: center; 
-  font-size: 120%;
-  margin-top: 10px;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff; 
-  padding: 10px 0;
-}
-
-#OCost{
-  text-decoration: line-through;
-  display: inline-block;
-  float: left;
-  padding-top: 10px;
-}
-
-#dCost {  
-  font-size: 440%;
-  color: #ffb87a;
-  display: inline-block;
-  padding: 10px 0 20px 0;
-  margin: 0;
-}
-
-#specialRate {  
-  font-size: 440%;
-  color: #ffb87a;
-  display: inline-block;
-  padding: 10px 0 20px 0;
-  margin: 0;
-}
-
-#offerEnds {
-  text-transform: uppercase;
-  color: #ffb87a;
-  font-size: 75%;
+ont-size: 75%;
 }
