@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Super Sandwich Deil</title>
+	<link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/c07.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/logotest.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+  </head>
+  
+  
+  <body>
+  
+  	<div>
+	
+		<a href="index.html"><img src="images/logo2.png" alt="Super Sandwich Deli logo"></a>
+		
+	</div>
+	
+    <div id="page">
+      <h2>Current Price</h2>
+	  <p><span id="counter"></span></p>
+      <ul>
+        <li id="one" class="hot">Potato Chips</li>
+        <li id="two" class="hot">Small Soda</li>
+        <li id="three" class="hot">Chocolate Chip Cookie</li>
+      </ul>
+      <div id="newItemButton"><button href="#" id="showForm">new item</button></div>
+      <form id="newItemForm">
+        <input type="text" id="itemDescription" placeholder="Add an Item" />
+        <input type="submit" id="add" value="add" />
+      </form>
+    </div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/delivery.js"></script>
+  </body>
+</html>
