@@ -222,7 +222,7 @@ footer p a {
 	}
 .round {
 	border-radius: 8px;
-	max-width: 20%;
+	max-width: auto;
 	display: block;
 }
 .roundm {
