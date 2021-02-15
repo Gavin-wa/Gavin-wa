@@ -7,6 +7,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/c03.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/price.js"></script>
+    <link rel="stylesheet" href="css/c09.css">
 	<meta name="viewport" content="width=device-width, initial scale=1">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:ital@1&display=swap" rel="stylesheet">
@@ -67,7 +70,6 @@
       <p>LIMITED TIME FREE DRINK AND SIDES</p>
       <div id="offerEnds"></div>
     </div>
-   <!--  <script src="js/special3.js"></script> --!>
 		
 		<article id="center">
 			<h3>Classic Hotdogs</h3>
@@ -134,17 +136,18 @@
 		
 	</div>	
 	
-	<div class="ann">
 				<p id="center"><span id="name">Place an order at</span></p> 
 				<p id="center"><a href="tel:5551234567" class="link"><span class="hwhite">(555) 123-4567<span></a></p>
-				
-				<h2 id="center"><span id="name">Deli Hours</span></h2>
-				<ul class="hours">
-					<li><span id="sans">Weekdays:</span> 4:30am-3:00pm</li>
-					<li><span id="sans">Saturday:</span> 6:00-4:00</li>
-					<li><span id="sans">Sunday:</span> Closed</li>
-				</ul>
-	</div>
+				<h2>Or Order Online</h2>
+				<div class="two-thirds">
+				  <table ng-controller="BasketCtrl">
+					<tr><td>Item:</td><td>{{ description }}</td></tr>
+					<tr><td>Cost:</td><td>${{ cost }}</td></tr>
+					<tr><td>Qty:</td><td><input type="number" ng-model="qty"></td></tr>
+					<tr><td>Subtotal:</td><td>{{qty * cost | currency}}</td></tr>
+				  </table>
+				</div>
+
 	
 	</main>
 

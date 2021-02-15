@@ -9,4 +9,15 @@
   width: 70%;
   float: center;
 }
-  
+ 
+.pri {
+	background-color: #233548;
+	color: #fff;
+	padding: 0 40%;
+	font-size: 1.5em;
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	 float: center;
+
+
+}

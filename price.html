@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title>Super Sandwich Deil</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+    <script src="js/angular-controller.js"></script>
+    <link rel="stylesheet" href="css/c09.css">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/logotest.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+  </head>
+  <body>
+  	<div>
+	
+		<a href="index.html"><img src="images/logo2.png" alt="Super Sandwich Deli logo"></a>
+		
+	</div>
+	
+			
+	<div>
+	
+		<nav>
+		
+			<ul>
+			
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="location.html">Location</a></li>
+				<li><a href="math.html">Weekly Prices</a></li>
+				<li><a href="promo.html">Promo</a></li>						
+			</ul>
+			
+		</nav>
+		
+	</div>
+    <h2 class=hwhite>PLACE ORDER HERE</h2>
+    <div class="pri">
+      <table ng-controller="BasketCtrl">
+        <tr><td><span id="name">Item:</span></td><td>{{ description }}</td></tr>
+        <tr><td><span id="name">Cost:</span></td><td>${{ cost }}</td></tr>
+        <tr><td><span id="name">Total in Cart:</span></td><td><input type="number" ng-model="qty"></td></tr>
+        <tr><td><span id="name">Subtotal:</span></td><td>{{qty * cost | currency}}</td></tr>
+      </table>
+    </div>
+	
+
+	<footer>
+		
+		<p>&copy; Copyright 2021. All Rights Reserved.</p>
+		<p><a href="mailto:Supersandwich@deli.net"><span id="hwhite">Supersandwich@deli.net</span></a></p>
+		
+	</footer>
+	
+	
+  </body>
+</html>
