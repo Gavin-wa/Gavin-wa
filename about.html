@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-	<title>Super Sandwich Deil</title>
-	<meta charset="utf-8">
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 11: Content Panels -  Accordion</title>
 	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/accordion.css" />
 	<meta name="viewport" content="width=device-width, initial scale=1">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:ital@1&display=swap" rel="stylesheet">
@@ -14,19 +13,11 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 	
-</head>
+  </head>
 
-<body>
+  <body>
 
-	<div>
-		
-		<header>
-		
-			<!-- <a href="index.html"><img src="images/logo2.png" alt="Super Sandwich Deli logo"></a> -->
-			
-		</header>
-	
-	</div>
+    <header></header>
 	
 	<div>
 	
@@ -54,77 +45,57 @@
 	</div>
 	
 	<main>
-	
-		<div class="tab-desk">
-	
-			<section>
-			
-				<h1 id="center">Deli Location</h1>
-				<img src="images/deli.jpg" alt="SSD Outdoor veiw" class="round" id="pad2-40">
-				<p class="center">Located on 987 Salami St we welcome both those in a hurry and are caught in the morning, or those who have a moment to spare.</p>
-				<ul class="center">
-					<li>Drive-thru</li>
-					<li>Take-Out</li>
-					<li>Indoor/Outdoor Seating</li>
-				</ul>
-				
-			</section>
-			
-			<section>
-			
-				<h1 id="center">Meet the Team</h1>
-				<img src="images/chef.jpg" alt="Our Chefs" class="round" id="pad2-40">
-				<p class="center">We take pride in our chefs, who have gone to school 10 years in preparation to make the best sandwich possible.</p>
-				<ul class="center">
-					<li>Doctorate Degree in Culinary Arts</li>
-					<li>Professional</li>
-					<li>Efficient</li>
-				</ul>
-				
-			</section>
-		
-		</div>
-		
-				<div class="mobile">
-	
-			<section id="pad2-0">
-			
-				<h1 id="center">Deli Location</h1>
-				<img src="images/deli.jpg" alt="SSD Outdoor veiw" class="mround">
-				<p>Located on 987 Salami St we welcome both those in a hurry caugh in the morning, or those who have a moment to spare.</p>
-				<ul class="center" id="name">
-					<li>Drive-thru</li>
-					<li>Take-Out</li>
-					<li>Indoor/Outdoor Seating</li>
-				</ul>
-				
-			</section>
-			
-			<section id="pad2-0">
-			
-				<h1 id="center">Meet the Team</h1>
-				<img src="images/chef.jpg" alt="Our Chefs" class="mround">
-				<p>We take pride in our chefs, who have gone to school 10 years in preparation to make the best sandwich possible.</p>
-				<ul class="center" id="name">
-					<li>Doctorate Degree in Culinary Arts</li>
-					<li>Professional</li>
-					<li>Efficient</li>
-				</ul>
-				
-			</section>
-		
-		</div>
-	
+
+    <section class="page">
+      <ul class="accordion">
+        <li>
+          <button class="accordion-control">Deli Location</button>
+          <div class="accordion-panel">
+			<img src="images/deli.jpg" alt="SSD Outdoor veiw">
+            <p>Located on 987 Salami St we welcome both those in a hurry and are caught in the morning, or those who have a moment to spare.</p>
+					<ul class="center">
+						<li>Drive-thru</li>
+						<li>Take-Out</li>
+						<li>Indoor/Outdoor Seating</li>
+					</ul>
+					<br></br>
+          </div>
+        </li>
+        <li>
+          <button class="accordion-control">Meet the Team</button>
+          <div class="accordion-panel">
+		  <img src="images/chef.jpg" alt="Our Chefs">
+            <p>We take pride in our chefs, who have gone to school 10 years in preparation to make the best sandwich possible.</p>
+					<ul class="center">
+						<li>Doctorate Degree in Culinary Arts</li>
+						<li>Professional</li>
+						<li>Efficient</li>
+					</ul>
+					<br></br>
+          </div>
+        </li>
+        <li>
+          <button class="accordion-control">Where to Find us</button>
+          <div class="accordion-panel">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15214.245340531383!2d-122.3405890464503!3d47.61594437531528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490151f4ed5b7f9%3A0xdb2ba8689ed0920d!2sSpace%20Needle!5e0!3m2!1sen!2sec!4v1606757166090!5m2!1sen!2sec" width="600" height="450" allowfullscreen="" class="map center"></iframe>
+            <p>If you dont have time to stop by our deli, try to catch one of our food trucks that roam the city!</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/accordion.js"></script>
 	
 	</main>
-
+	
 	<footer>
 	
 		<p>&copy; Copyright 2021. All Rights Reserved.</p>
 		<p><a href="mailto:Supersandwich@deli.net"><span id="hwhite">Supersandwich@deli.net</span></a></p>
 		
 	</footer>
-	
-</body>
 
+  </body>
 </html>
